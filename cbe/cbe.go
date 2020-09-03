@@ -6,9 +6,9 @@ type CBE interface {
 	GetTimeStamp() float64
 	GetObjNumber() int
 
-	GetObjByGlobalID(string) CBEObjStruct
-	GetObjByTrackingID(int) CBEObjStruct
-	GetObjByIndex(int) CBEObjStruct
+	GetObjByGlobalID(GlobalID string) CBEObjStruct
+	GetObjByTrackingID(trackingID int) CBEObjStruct
+	GetObjByIndex(index int) CBEObjStruct
 
 	SetFrameInfo()
 	SetGlobalIDIndex()
