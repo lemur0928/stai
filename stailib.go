@@ -8,6 +8,6 @@ import (
 // STAILibrary STAI library
 type STAILibrary interface {
 	GetServTrackTrace() tt.TrackTrace
-	GetServCBE() cbe.CBE
-	GetServCBEObjStruct() cbe.CBEObjStruct
+	GetServCBE() cbe.CBEServ
+	//	GetServCBEObjStruct() cbe.CBEObjStruct
 }
