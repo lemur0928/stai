@@ -11,7 +11,7 @@ type CBEObjStruct interface {
 	GetProbability()	float64
 	GetConfidence()		float64
 	GetBox()	BoundingBox
-	GetLocation()	GeoCoordinate
+	GetLocation()	Geo
 	GetTag(string)	interface{}
 
 	SetGlobalID(string)
