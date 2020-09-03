@@ -10,14 +10,14 @@ type CBEObjStruct interface {
 	GetName() string
 	GetProbability() float64
 	GetConfidence() float64
-	//	GetBox() BoundingBox
-	//	GetLocation() Geo
+	GetBox() BoundingBox
+	GetLocation() Geo
 	GetTag(key string) interface{}
 
 	SetGlobalID(globalID string)
-	//	SetFrameInfo(frameInfo CBE)
-	//	Distance(CBEObjStruct) int
-	//	Overlap(CBEObjStruct) bool
+	SetFrameInfo(frameInfo CBE)
+	Distance(CBEObjStruct) int
+	Overlap(CBEObjStruct) bool
 	IsName(name string) bool
-	//	Carry(obj CBEObjStruct) bool
+	Carry(obj CBEObjStruct) bool
 }
