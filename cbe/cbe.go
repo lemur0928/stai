@@ -10,6 +10,13 @@ type CBE interface {
 	GetObjByTrackingID(trackingID int) CBEObjStruct
 	GetObjByIndex(index int) CBEObjStruct
 
+	SetFrameID(frameID string)
+	SetSensorID(sensorID string)
+	SetTimeStampFloat(timestampFloat float64)
+	SetTimeStamp(timestamp int)
+	SetDateTime(dateTime string)
+	SetTObjects(tObjects []CBEObjStruct)
+
 	SetFrameInfo()
 	SetGlobalIDIndex()
 	SetTrackingIDIndex()

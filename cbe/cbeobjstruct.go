@@ -14,8 +14,16 @@ type CBEObjStruct interface {
 	GetLocation() Geo
 	GetTag(key string) interface{}
 
-	SetGlobalID(globalID string)
 	SetFrameInfo(frameInfo CBE)
+	SetGlobalID(globalID string)
+	SetTrackingID(trackingID int)
+	SetName(name string)
+	SetProbability(probability float64)
+	SetConfidnece(confidence float64)
+	SetBox(box BoundingBox)
+	SetGeo(geo Geo)
+	SetTag(key string, value interface{})
+
 	Distance(CBEObjStruct) int
 	Overlap(CBEObjStruct) bool
 	IsName(name string) bool
