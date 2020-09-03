@@ -1,8 +1,8 @@
 package tt
 
 import (
-	"github.com/bigobject-inc/stailib/tt/space"
-	"github.com/bigobject-inc/stailib/tt/space/cctv"
+	"github.com/ptoyoohri/stailib/tt/space"
+	"github.com/ptoyoohri/stailib/tt/space/cctv"
 )
 
 // TrackTrace track and trace service
