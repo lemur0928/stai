@@ -16,8 +16,8 @@ type CBEObjStruct interface {
 
 	SetGlobalID(string)
 	SetFrameInfo(CBE)
-	Distance(CBEObjStruct) int
-	Overlap(CBEObjStruct) bool
+	//	Distance(CBEObjStruct) int
+	//	Overlap(CBEObjStruct) bool
 	IsName(string) bool
 	//	Carry(CBEObjStruct) bool
 }
