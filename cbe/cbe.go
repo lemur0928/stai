@@ -6,10 +6,10 @@ type CBE interface {
 	GetSensorID() string
 	GetTimeStamp()	float64
 	GetObjNumber() int
-	GetAllObjects() []TObject
-	GetObjByGlobalID(string) *cbe.TObject
-	GetObjByTrackingID(int)	*cbe.TObject
-	GetObjByIndex(int)	*cbe.TObject
+	GetAllObjects() []CBEObjStruct
+	GetObjByGlobalID(string) *CBEObjStruct
+	GetObjByTrackingID(int)	*CBEObjStruct
+	GetObjByIndex(int)	*CBEObjStruct
 	
 	SetFrameInfo()
 	SetGlobalIDIndex()
