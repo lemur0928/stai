@@ -19,5 +19,5 @@ type CBEObjStruct interface {
 	//	Distance(CBEObjStruct) int
 	//	Overlap(CBEObjStruct) bool
 	IsName(name string) bool
-	Carry(obj CBEObjStruct) bool
+	//	Carry(obj CBEObjStruct) bool
 }
