@@ -1,5 +1,6 @@
 package cbe
 
+// CBEObjStruct :
 type CBEObjStruct interface {
 	GetFrameID() string
 	GetSensorID() string

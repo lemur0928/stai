@@ -14,7 +14,7 @@ type CBE interface {
 	SetSensorID(sensorID string)
 	SetTimeStampFloat(timestampFloat float64)
 	SetTimeStamp(timestamp int)
-	SetDateTime(dateTime string)
+	SetDateTime(timestampFloat float64)
 	SetTObjects(tObjects []CBEObjStruct)
 
 	SetFrameInfo()
