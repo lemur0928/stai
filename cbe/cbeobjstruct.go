@@ -24,7 +24,7 @@ type CBEObjStruct interface {
 	SetLocation(geo Geo)
 	SetTag(key string, value interface{})
 
-	Distance(CBEObjStruct) int
+	Distance(CBEObjStruct) float64
 	Overlap(CBEObjStruct) bool
 	IsName(name string) bool
 	Carry(obj CBEObjStruct) bool
