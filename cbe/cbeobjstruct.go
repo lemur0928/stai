@@ -12,7 +12,7 @@ type CBEObjStruct interface {
 	GetProbability() float64
 	GetConfidence() float64
 	GetBox() BoundingBox
-	GetLocation() Geo
+	GetLocation() Location
 	GetTag(key string) interface{}
 
 	SetFrameInfo(frameInfo CBE)
@@ -22,7 +22,7 @@ type CBEObjStruct interface {
 	SetProbability(probability float64)
 	SetConfidnece(confidence float64)
 	SetBox(box BoundingBox)
-	SetLocation(geo Geo)
+	SetLocation(geo Location)
 	SetTag(key string, value interface{})
 
 	Distance(CBEObjStruct) float64

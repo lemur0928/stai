@@ -14,7 +14,7 @@ STAI `Spatial Temporal Artificial Intelligence` 函式庫定義
 
     - cbe.go: 相當於 frame
     - cbeobjstruct.go: 相當於 frame 裡面的 objects
-    - cbe.type.go: 裡面有 BoundingBox 和 Geo
+    - cbe.type.go: 裡面有 BoundingBox 和 Location
 
 ## Changelog
 
