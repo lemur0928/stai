@@ -21,7 +21,7 @@ type CBEObjStruct interface {
 	SetProbability(probability float64)
 	SetConfidnece(confidence float64)
 	SetBox(box BoundingBox)
-	SetGeo(geo Geo)
+	SetLocation(geo Geo)
 	SetTag(key string, value interface{})
 
 	Distance(CBEObjStruct) int
