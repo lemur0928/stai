@@ -3,7 +3,9 @@ package cbe
 type CBE interface {
 	GetFrameID() string
 	GetSensorID() string
-	GetTimeStamp() float64
+	GetTimeStamp() int
+	GetTimeStampFloat() float64
+	GetDateTime() string
 	GetObjNumber() int
 
 	GetObjByGlobalID(GlobalID string) CBEObjStruct

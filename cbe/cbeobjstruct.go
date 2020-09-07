@@ -2,9 +2,7 @@ package cbe
 
 // CBEObjStruct :
 type CBEObjStruct interface {
-	GetFrameID() string
-	GetSensorID() string
-	GetTimeStamp() float64
+	GetFrameInfo() CBE
 
 	GetGlobalID() string
 	GetBackLink() string
