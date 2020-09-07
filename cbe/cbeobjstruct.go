@@ -7,6 +7,7 @@ type CBEObjStruct interface {
 	GetTimeStamp() float64
 
 	GetGlobalID() string
+	GetBackLink() string
 	GetTrackingID() int
 	GetName() string
 	GetProbability() float64
@@ -17,6 +18,7 @@ type CBEObjStruct interface {
 
 	SetFrameInfo(frameInfo CBE)
 	SetGlobalID(globalID string)
+	SetBackLink(backLink string)
 	SetTrackingID(trackingID int)
 	SetName(name string)
 	SetProbability(probability float64)
