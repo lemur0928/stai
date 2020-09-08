@@ -12,3 +12,13 @@ type BoundingBox struct {
 	Width  float64 `json:"width"`
 	Height float64 `json:"height"`
 }
+
+type Label struct {
+	Type string          `json:"type"`
+	Tags map[string]*Tag `json:"tags"`
+}
+
+type Tag struct {
+	Name  string      `json:"name"`
+	Value interface{} `json:"value"`
+}

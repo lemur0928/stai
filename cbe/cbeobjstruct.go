@@ -18,7 +18,7 @@ type CBEObjStruct interface {
 	GetConfidence() float64
 	GetBox() BoundingBox
 	GetLocation() Location
-	GetTag(key string) interface{}
+	GetTag(label, name string) (v interface{})
 
 	// set object info
 	SetGlobalID(globalID string)
@@ -29,7 +29,7 @@ type CBEObjStruct interface {
 	SetConfidnece(confidence float64)
 	SetBox(box BoundingBox)
 	SetLocation(geo Location)
-	SetTag(key string, value interface{})
+	SetTag(label, name string, value interface{})
 
 	SetFrameInfo(CBE)
 	Distance(CBEObjStruct) float64
