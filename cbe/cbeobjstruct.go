@@ -31,6 +31,7 @@ type CBEObjStruct interface {
 	SetLocation(geo Location)
 	SetTag(key string, value interface{})
 
+	SetFrameInfo(CBE)
 	Distance(CBEObjStruct) float64
 	Overlap(CBEObjStruct) bool
 	IsName(name string) bool
