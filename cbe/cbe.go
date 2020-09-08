@@ -6,6 +6,7 @@ type CBE interface {
 	GetTimeStamp() int
 	GetTimeStampFloat() float64
 	GetDateTime() string
+
 	GetObjNumber() int
 
 	GetObjByGlobalID(globalID string) CBEObjStruct
@@ -18,8 +19,6 @@ type CBE interface {
 	SetTimeStampFloat(timestampFloat float64)
 	SetTimeStamp(timestamp int)
 	SetDateTime(timestampFloat float64)
-	SetTObjects(tObjects []CBEObjStruct)
 
-	SetGlobalIDIndex(globalID string, index int)
-	SetTrackingIDIndex(trackingID, index int)
+	SetTObjects(tObjects []CBEObjStruct)
 }

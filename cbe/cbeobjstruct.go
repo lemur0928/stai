@@ -2,8 +2,14 @@ package cbe
 
 // CBEObjStruct :
 type CBEObjStruct interface {
-	GetFrameInfo() CBE
+	// get info from frame
+	GetFrameID() string
+	GetSensorID() string
+	GetTimeStamp() int
+	GetTimeStampFloat() float64
+	GetDateTime() string
 
+	// get object info
 	GetGlobalID() string
 	GetBackLink() string
 	GetTrackingID() int
@@ -14,9 +20,7 @@ type CBEObjStruct interface {
 	GetLocation() Location
 	GetTag(key string) interface{}
 
-	SetFrameInfo(frameInfo CBE)
-	SetGlobalIDIndex(index int)
-	SetTrackingIDIndex(index int)
+	// set object info
 	SetGlobalID(globalID string)
 	SetBackLink(backLink string)
 	SetTrackingID(trackingID int)
