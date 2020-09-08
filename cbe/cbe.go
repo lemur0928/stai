@@ -8,7 +8,7 @@ type CBE interface {
 	GetDateTime() string
 	GetObjNumber() int
 
-	GetObjByGlobalID(GlobalID string) CBEObjStruct
+	GetObjByGlobalID(globalID string) CBEObjStruct
 	GetObjByTrackingID(trackingID int) CBEObjStruct
 	GetObjByIndex(index int) CBEObjStruct
 	GetTObjects() []CBEObjStruct
@@ -20,7 +20,6 @@ type CBE interface {
 	SetDateTime(timestampFloat float64)
 	SetTObjects(tObjects []CBEObjStruct)
 
-	SetFrameInfo()
-	SetGlobalIDIndex()
-	SetTrackingIDIndex()
+	SetGlobalIDIndex(globalID string, index int)
+	SetTrackingIDIndex(trackingID, index int)
 }

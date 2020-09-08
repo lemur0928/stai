@@ -15,6 +15,8 @@ type CBEObjStruct interface {
 	GetTag(key string) interface{}
 
 	SetFrameInfo(frameInfo CBE)
+	SetGlobalIDIndex(index int)
+	SetTrackingIDIndex(index int)
 	SetGlobalID(globalID string)
 	SetBackLink(backLink string)
 	SetTrackingID(trackingID int)
