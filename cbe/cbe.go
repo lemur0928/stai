@@ -4,7 +4,7 @@ package cbe
 type CBE interface {
 	GetFrameID() string
 	GetSensorID() string
-	GetTimeStamp() int
+	GetTimestamp() int
 	GetMicrosecond() int64
 	GetObjNumber() int
 
@@ -16,7 +16,7 @@ type CBE interface {
 	SetFrameID(frameID string)
 	SetSensorID(sensorID string)
 
-	SetTimeStamp(timestamp int)
+	SetTimestamp(timestamp int)
 	SetMicrosecond(timestampMicrosecond int64)
 
 	SetTObjects(tObjects []CBEObjStruct)

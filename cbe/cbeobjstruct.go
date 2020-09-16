@@ -5,11 +5,12 @@ type CBEObjStruct interface {
 	// get info from frame
 	GetFrameID() string
 	GetSensorID() string
-	GetTimeStamp() int64
+	GetTimestamp() int
 
 	// get object info
 	GetGlobalID() string
 	GetBackLink() string
+	GetSequenceID() string
 	GetTrackingID() int
 	GetName() string
 	GetProbability() float64
