@@ -4,6 +4,12 @@ import (
 	"github.com/ptoyoohri/stailib/cbe"
 )
 
+// FilterCommand filter Command
+type FilterCommand struct {
+	Action string   `json:"action"`
+	IDs    []string `json:"ids"`
+}
+
 // Node node info of a path
 type Node struct {
 	FrameID              string
