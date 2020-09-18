@@ -12,17 +12,17 @@ type FilterCommand struct {
 
 // Node node info of a path
 type Node struct {
-	FrameID              string
-	SensorID             string
-	TimestampMicrosecond int64
-	Timestamp            int
-	GlobalID             string
-	TrackingID           int
-	Name                 string
-	SequenceID           string
-	BackLink             string
-	Probability          float64
-	Confidence           float64
-	GeoLocation          cbe.Location
-	BoundingBox          cbe.BoundingBox
+	FrameID              string          `json:"frameID"`
+	SensorID             string          `json:"sensorID"`
+	TimestampMicrosecond int64           `json:"timestampMicrosecond"`
+	Timestamp            int             `json:"timestamp"`
+	GlobalID             string          `json:"globalID"`
+	TrackingID           int             `json:"trackingID"`
+	Name                 string          `json:"name"`
+	SequenceID           string          `json:"sequenceID"`
+	BackLink             string          `json:"backLink"`
+	Probability          float64         `json:"probability"`
+	Confidence           float64         `json:"confidence"`
+	GeoLocation          cbe.Location    `json:"location"`
+	BoundingBox          cbe.BoundingBox `json:"boundingBox"`
 }
