@@ -25,7 +25,7 @@ type CBEObjStruct interface {
 	SetTrackingID(trackingID int)
 	SetName(name string)
 	SetProbability(probability float64)
-	SetConfidnece(confidence float64)
+	SetConfidence(confidence float64)
 	SetBox(box BoundingBox)
 	SetLocation(geo Location)
 	SetTag(label, name string, value interface{})
