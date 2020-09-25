@@ -1,4 +1,4 @@
-module github.com/lemur0928/stailib
+module github.com/lemur0928/stai
 
 go 1.13
 
