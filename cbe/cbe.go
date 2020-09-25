@@ -20,5 +20,5 @@ type CBE interface {
 	SetMicrosecond(timestampMicrosecond int64)
 
 	SetTObjects(tObjects []CBEObjStruct)
-	CreateGlobalIDIndex()
+	BuildGlobalIDIndex()
 }
