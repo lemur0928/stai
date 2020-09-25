@@ -1,4 +1,4 @@
-module github.com/ptoyoohri/stailib
+module github.com/lemur0928/stailib
 
 go 1.13
 
